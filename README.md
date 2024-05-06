@@ -32,26 +32,16 @@ The inner layers for deeper processing of the inputs are known as hidden layers.
 The number of layers in MLP is not fixed and thus can have any number of hidden layers for processing. In the case of MLP, the weights are defined for each hidden layer, which transfers the signal to the next proceeding layer.Using the MLP approach lets us dive into more than two dimensions, which in turn lets us separate the outputs of XOR using multidimensional equations.Each hidden unit invokes an activation function, to range down their output values to 0 or The MLP approach also lies in the class of feed-forward Artificial Neural Network, and thus can only communicate in one direction. MLP solves the XOR problem efficiently by visualizing the data points in multi-dimensions and thus constructing an n-variable equation to fit in the output values using back propagation algorithm
 
 <h3>Algorithm :</H3>
-
-```
-
-Step 1 : 
-	Initialize the input patterns for XOR Gate<BR>
-Step 2: 
-	Initialize the desired output of the XOR Gate<BR>
-Step 3: 
-	Initialize the weights for the 2 layer MLP with 2 Hidden neuron  and 1 output neuron<BR>
-Step 4: 
-	Repeat the  iteration  until the losses become constant and  minimum<BR>
+Step 1 : Initialize the input patterns for XOR Gate<BR>
+Step 2: Initialize the desired output of the XOR Gate<BR>
+Step 3: Initialize the weights for the 2 layer MLP with 2 Hidden neuron  and 1 output neuron<BR>
+Step 4: Repeat the  iteration  until the losses become constant and  minimum<BR>
     		(i)  Compute the output using forward pass output<BR>
     		(ii) Compute the error<BR>
     		(iii) Compute the change in weight ‘dw’ by using backward progatation algorithm. <BR>
     		(iv) Modify the weight as per delta rule.<BR>
     		(v)  Append the losses in a list <BR>
-Step 5 :
-	Test for the XOR patterns.
-
-```
+Step 5 : Test for the XOR patterns.
 
 <H3>Program:</H3>
 
@@ -146,7 +136,7 @@ predict(w1,w2,test)
 
 <H3>Output:</H3>
 
-![image](https://github.com/PSriVarshan/Ex-3-NN/assets/114944059/e9e38ffe-fe26-4688-98fb-d502d33de45f)
+<img src=https://github.com/PSriVarshan/Ex-3-NN/assets/114944059/e9e38ffe-fe26-4688-98fb-d502d33de45f height=250 width=300>
 
 
 ![image](https://github.com/PSriVarshan/Ex-3-NN/assets/114944059/b999aec7-b80d-458e-aa79-6e3e71a9b97c)
